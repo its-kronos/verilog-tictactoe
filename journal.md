@@ -9,3 +9,13 @@
 <img width="1398" height="837" alt="image" src="https://github.com/user-attachments/assets/551ff2ef-bf6a-4439-be51-a47b9898ca3d" />
 
 **time: 1h**
+
+# 8/26/25
+
+- Went through more of the vector stuff, and it's slowly starting to get clearer, but one of the things that was challenging was figuring out what a 4 input xor gate was.
+- This would've been so much easier if I had known that there was a prebuilt xor operator in verilog, so I spent quite a bit of time trying to understand it.
+- Otherwise, I feel that my progress is pretty good.
+
+<img width="1321" height="756" alt="image" src="https://github.com/user-attachments/assets/738ed784-1b9a-456d-ba1b-712886625a50" />
+
+**time: 1h**
