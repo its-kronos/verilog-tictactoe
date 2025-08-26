@@ -19,3 +19,13 @@
 <img width="1321" height="756" alt="image" src="https://github.com/user-attachments/assets/738ed784-1b9a-456d-ba1b-712886625a50" />
 
 **time: 1h**
+
+- started on making new modules, and this part was actually pretty easy
+- the most challenging part was creating my own full-adder, which was just me having to search up the truth table for one
+
+- I also kept forgetting to create wires to have more than one bit, which makes my success rate REALLY low
+
+<img width="1322" height="125" alt="image" src="https://github.com/user-attachments/assets/227be143-ac0e-4701-b665-3944fa8395e5" />
+
+
+**time: 1h**
