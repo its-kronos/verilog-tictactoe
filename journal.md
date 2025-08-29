@@ -41,3 +41,5 @@
 - Anyways, next time should be where I can start working on the project
 
 <img width="1311" height="705" alt="image" src="https://github.com/user-attachments/assets/619ef57f-743b-4119-9bf4-44163f7a2cff" />
+
+**time: 1h**
