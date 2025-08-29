@@ -29,3 +29,15 @@
 
 
 **time: 1h**
+
+# 8/29/25
+
+- Finished up the section for modules and breezed through the procedure section
+- It did take a bit of research to understand nonblocking vs blocking assignments since hdlbits doesn't dive into the details, but since I was curious I decided to understand why one would be used in a different case
+
+- If using blocking operators with registors and a clock, it updates a value before moving on, so a=b followed by b=a doesn't swap the values but instead makes both of them equal to b's initial
+- If using nonblocking operators, all assignments are in parallel, so the above code would swap the values
+
+- Anyways, next time should be where I can start working on the project
+
+<img width="1311" height="705" alt="image" src="https://github.com/user-attachments/assets/619ef57f-743b-4119-9bf4-44163f7a2cff" />
