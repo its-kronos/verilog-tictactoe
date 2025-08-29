@@ -43,3 +43,16 @@
 <img width="1311" height="705" alt="image" src="https://github.com/user-attachments/assets/619ef57f-743b-4119-9bf4-44163f7a2cff" />
 
 **time: 1h**
+
+- Started working on the actual game, and I started by renaming the parent module at the very top, and then spent 40 minutes trying to display a solid color
+- Eventually found our that I can't change the name without the simulation breaking
+
+<img width="1176" height="421" alt="image" src="https://github.com/user-attachments/assets/de688b2d-25f5-49c4-ba2d-68bb7c164911" />
+
+- Got color working under a module too!
+
+<img width="1670" height="685" alt="image" src="https://github.com/user-attachments/assets/010a8f6f-2507-4e61-a0d1-d6fcfb24bbec" />
+
+**time: 1h**
+
+
