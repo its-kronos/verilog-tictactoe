@@ -55,4 +55,21 @@
 
 **time: 1h**
 
+# 8/30/25
+
+- Grid works!
+- VGA is pretty straightforwards and I'm surprised it was this fast
+
+<img width="385" height="416" alt="image" src="https://github.com/user-attachments/assets/4574eba0-c29b-4e92-bec1-a5170a9d7853" />
+
+- Also spent time adding parameters to make it easily customizable if I want to change something
+
+<img width="447" height="297" alt="image" src="https://github.com/user-attachments/assets/12a93878-86f0-48bd-a916-04beed5c5ff7" />
+
+
+- next task would be rendering a selector box based on an array of bits (that changes based on user control)
+
+**time: 1h**
+
+
 
