@@ -9,6 +9,20 @@
 
 `default_nettype none
 
+// res_x_total = 640;
+// res_y_total = 480;
+
+parameter res_x = 480;
+parameter res_y = 480;
+
+parameter grid_thickness = 5;
+parameter offset_x=80;
+parameter offset_y=0;
+
+parameter white = {2'b11, 2'b11, 2'b11};
+parameter black = {2'b00, 2'b00, 2'b00};
+
+
 module tt_um_vga_example(
   input  wire [7:0] ui_in,    // Dedicated inputs
   output wire [7:0] uo_out,   // Dedicated outputs
@@ -51,28 +65,76 @@ module tt_um_vga_example(
     .vpos(pix_y)
   );
 
-  render render_mod(.clk(clk), .video_active(video_active), .R(R), .G(G), .B(B));
+  wire game_over;
+  assign game_over = 0;
+
+  render render_mod(.clk(clk), .video_active(video_active), .game_over(game_over), .pix_x(pix_x), .pix_y(pix_y), .R(R), .G(G), .B(B));
 
 endmodule
 
 module render(
   input clk,
   input video_active,
+  input game_over,
+  input [9:0] pix_x,
+  input [9:0] pix_y,
   output reg [1:0] R,
   output reg [1:0] G,
   output reg [1:0] B
 );
 
+  wire grid_active;
+
+
+  assign grid_active = ((pix_x-offset_x)<=res_x&&(pix_y-offset_y)<res_y&&( ( ( ((pix_x-offset_x)<(((res_x)/3)+grid_thickness)) 
+    && 
+    
+    ((pix_x-offset_x)>(((res_x)/3)-grid_thickness)) ) 
+    
+    || 
+    
+    ( ((pix_x-offset_x)<((((res_x)/3)*2)+grid_thickness)) 
+    
+    && 
+    
+    ((pix_x-offset_x)>((((res_x)/3)*2)-grid_thickness)) ) ) 
+    
+    || 
+    
+    ( ( ((pix_y-offset_y)>((((res_y)/3)*2)-grid_thickness)) 
+    
+    &&
+
+    ((pix_y-offset_y)<((((res_y)/3)*2)+grid_thickness))
+
+    ) 
+    
+    || 
+    
+    (((pix_y-offset_y)>(((res_y)/3)-grid_thickness))
+    
+    && ((pix_y-offset_y)<(((res_y)/3)+grid_thickness))
+
+    ) ) )) 
+    
+    ? 1 : 0;
+
+
   always @(posedge clk) begin
+    {R, G, B} <= black;
     if (video_active) begin
-      R<=2'b01;
-      G<=2'b01;
-      B<=2'b01;
+      if (~game_over) begin
+        // grid
+
+        if (grid_active) begin
+          {R,G,B} <= white;
+        end
+      end
+      else begin // game over
+
+      end
     end
-    else begin
-      R <= 2'b00;
-      G <= 2'b00;
-      B <= 2'b00;
+    else begin // video active
     end
   end
 
