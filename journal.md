@@ -77,6 +77,7 @@
 
 <img width="638" height="561" alt="image" src="https://github.com/user-attachments/assets/533e8436-8d35-4052-9c87-5121696d8083" />
 
+
 <img width="256" height="113" alt="image" src="https://github.com/user-attachments/assets/1ceefda5-9011-4f5a-9c72-d016212b596c" />
 
 
@@ -86,5 +87,15 @@
 
 **time: 1h**
 
+- Fixed the bug by rewriting the logic (i don't know what was wrong, but rewriting it seemed to fix it)
 
+- Added controls that the user can use the move the selection box
+- The most painful part about this was forgetting that the endian used in verilog is generally not the same as the one used in normal programming languages
+- I had made an array to easily pass inputs, but since the endian was not what I expected I wasted a ton of time monitoring the wrong input, which confused me as to why it would not work
+
+- Otherwise, this was pretty smooth and controls work now, except for the unexpected need for a debounce (right now the selection skips over by two)
+
+[progress](https://youtu.be/ql1aNV_Lrdo)
+
+**time: 1h**
 
