@@ -71,5 +71,20 @@
 
 **time: 1h**
 
+# 8/31/35
+
+- Added registers for the selection process and spent pretty much the rest of the hour working on some selector UI and the logic for implementing it while making it easily changable by changing the registers
+
+<img width="638" height="561" alt="image" src="https://github.com/user-attachments/assets/533e8436-8d35-4052-9c87-5121696d8083" />
+
+<img width="256" height="113" alt="image" src="https://github.com/user-attachments/assets/1ceefda5-9011-4f5a-9c72-d016212b596c" />
+
+
+- The only thing that does have to be ironed out is when the Y value is on the last column
+
+<img width="691" height="561" alt="image" src="https://github.com/user-attachments/assets/27ca62bd-1962-4525-9362-a89e6ac44a1d" />
+
+**time: 1h**
+
 
 
