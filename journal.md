@@ -99,3 +99,12 @@
 
 **time: 1h**
 
+# 9/1/25
+
+- spent the entire hour adding debounce logic, mainly trying to figure out why one part wasn't working
+- Turns out it was because of a continuous assignment i had on the select registers, so after removing that and replacing it with rst_n for defaults it worked as expected
+
+[progress](https://youtu.be/_eRoced9Oj8)
+
+**time: 1h**
+
